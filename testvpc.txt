@@ -1,6 +1,6 @@
-resource "aws_vpc" "facebook-vpc"{
-  cidr_block = "10.0.0.0/24"
+resource "aws_vpc" "book-vpc"{
+  cidr_block = "10.0.0.2/24"
 	tags{
-	name="facebook-vpc"
-	owner="rama"
+	name="book-vpc"
+	owner="krishna"
 	}
