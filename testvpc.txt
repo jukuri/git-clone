@@ -4,3 +4,10 @@ resource "aws_vpc" "book-vpc"{
 	name="book-vpc"
 	owner="krishna"
 	}
+	
+resource "aws_vpc" "testbook-vpc"{
+cidr_block = "10.0.0.3/24"
+	tags{
+	name="testbook-vpc"
+	owner="krish"
+	}
