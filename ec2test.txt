@@ -6,3 +6,11 @@ resource "aws_instance" "facebook-ec2" {
 		owner="rama"
 		Region="N.va"
 		}
+resource "aws_instance" "mybook-ec2" {
+  ami           = "ami-2757f631"
+  instance_type = "t2.micro"	
+	tags{
+		Name="mybook-ec2"
+		owner="rk"
+		Region="N.va"
+		}
