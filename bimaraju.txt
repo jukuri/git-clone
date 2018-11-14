@@ -1,0 +1,8 @@
+resource "aws_instance" "facebook-ec2" {
+  ami           = "ami-2757f631"
+  instance_type = "t2.micro"	
+	tags{
+		Name="facebook-ec2"
+		owner="rama"
+		Region="N.va"
+		}
